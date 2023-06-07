@@ -1,6 +1,6 @@
 # AI
 
-Knights and Queens
+# Knights and Queens
 
 Problem Scenario:
 You are given a chessboard of size N * M, where N represents the number of rows and M represents the number of columns. Your task is to arrange K knights and Q queens on the board in such a way that no queens attack each other and no knight attacks another knight or a queen. The goal is to find a valid configuration that satisfies these conditions.
@@ -27,7 +27,7 @@ Algorithms Implemented:
 
 *****************
 
-Sliding Puzzle
+# Sliding Puzzle
 
 Problem Scenario:
 
@@ -51,7 +51,7 @@ Algorithms Implemented:
 
 *****************
 
-Classifications & Predictions 
+# Classifications & Predictions 
 
 A) Analysis of Bank Marketing Dataset
 
