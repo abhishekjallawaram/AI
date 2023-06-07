@@ -93,7 +93,7 @@ Your aim is to enhance the prediction accuracy by selecting appropriate regresso
 
 **************
 
-Letter Classification with Neural Networks
+# Letter Classification with Neural Networks
 
 Problem Scenario: 
 
