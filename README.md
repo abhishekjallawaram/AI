@@ -93,3 +93,22 @@ Your aim is to enhance the prediction accuracy by selecting appropriate regresso
 
 **************
 
+Letter Classification with Neural Networks
+
+Problem Scenario: 
+
+You are given a dataset containing black-and-white rectangular pixel displays of the 26 capital letters in the English alphabet. The dataset consists of 20,000 unique stimuli, each representing a letter image based on 20 different fonts. Each letter within these fonts was randomly distorted, resulting in 16 primitive numerical attributes, including statistical moments and edge counts. These attributes were scaled to fit into a range of integer values from 0 through 15.
+
+The dataset is split into two files: train.csv and test.csv. The train.csv file contains 16,000 instances for training, while the test.csv file contains 4,000 instances for testing.
+
+Your objectives for this project are as follows:
+
+1) Utilize MLPerceptron from scikit-learn: Implement the MLPerceptron algorithm from the scikit-learn library for letter classification. Tune the parameters and network configurations as much as possible to improve the performance.
+
+2) Utilize a neural network from another well-known distribution: Choose a popular deep learning library such as Keras, PyTorch, or TensorFlow, and implement a neural network for letter classification. Similar to the MLPerceptron, tune the parameters and network configurations to optimize the performance.
+
+3) Utilize RandomForestClassifier from scikit-learn: Use RandomForestClassifier from scikit-learn as a baseline comparison for your neural network models. Compare the performance of your neural networks with the RandomForestClassifier.
+
+Task:
+
+Your task is to train and evaluate these models using the provided train.csv and test.csv datasets. Experiment with different parameters and network configurations to improve the performance of your neural network models. By comparing the results with the RandomForestClassifier, you aim to demonstrate the effectiveness and potential improvements of neural networks for the letter classification task.
