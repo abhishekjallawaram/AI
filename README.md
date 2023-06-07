@@ -51,4 +51,45 @@ Algorithms Implemented:
 
 *****************
 
-Predictions 
+Classifications & Predictions 
+
+A) Analysis of Bank Marketing Dataset
+
+Problem Scenario : 
+
+You have been provided with a dataset related to the direct marketing campaigns of a Portuguese banking institution. The dataset, named bank-additional-full.csv, contains information about phone calls made to clients, and the goal is to predict whether a client will subscribe to a term deposit or not.
+
+The dataset can be found at the following URL: Bank Marketing Dataset (https://archive.ics.uci.edu/dataset/222/bank+marketing)
+
+Your task is to implement the following classifiers:
+
+1) K-Nearest Neighbors (KNN) classifier
+2) Decision Tree classifier
+3) Random Forest classifier
+4) Another classifier of your choice with the objective of improving the classification performance as much as possible.
+
+Task:
+
+Your ultimate objective is to improve the classification accuracy by selecting suitable classifiers, preprocessing the data if necessary, and leveraging the strengths of the additional classifier you choose.
+
+B) Prediction of Motion-Planning Distance
+
+Problem Scenario:
+
+The objective of motion planning is to compute a path from an initial position to a goal position while avoiding collisions with obstacles. One of the simplest algorithms used for motion planning is called Bug2 (https://www.youtube.com/watch?v=Z70hrAUewhI) . The Bug2 algorithm tries to move directly toward the goal. When it encounters an obstacle, it moves along the boundary of the obstacle until a straight path to the goal becomes available. You can refer to the following YouTube video to see a solution achieved using the Bug2 algorithm: Bug2 Algorithm Solution
+
+Your task is to predict the distance of the solution found by the Bug2 algorithm given the start position (sx, sy) and the goal position (gx, gy). Each row in the dataset represents a specific scenario, providing the start position, the goal position, and the distance of the solution found by the Bug2 algorithm.
+
+To accomplish this task, you should implement the following regression models:
+
+1) K-Nearest Neighbors (KNN) regressor
+2) Decision Tree regressor
+3) Random Forest regressor
+4) Another regressor of your choice with the objective of improving the prediction accuracy as much as possible.
+
+Task:
+
+Your aim is to enhance the prediction accuracy by selecting appropriate regressors and leveraging the strengths of the additional regressor you choose.
+
+**************
+
