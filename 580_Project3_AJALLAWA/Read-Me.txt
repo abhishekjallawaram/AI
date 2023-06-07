@@ -1,0 +1,35 @@
+Name : Abhishek Jallawaram
+mailid : ajallawa@gmu.edu
+GMU ID : G01373042
+NetID : ajallawa
+
+******************************
+
+Requirement.txt containts the packages required
+
+File generated from Google Colab. The .py file can be run in any python IDE.
+
+Classifiers:
+K-NN
+Decision Tree
+Random Forest
+Naive Bayes - Bernoulli
+Logistic Regression
+
+Regression:
+K-Neighbors Regressor
+Decision Tree Regressor
+Random Forest Regressor
+Naive Bayes Regressor
+Neural Network Regressor
+AdaBoostRegressor
+SVR
+
+
+*************************
+
+Report name : CS_580___Project_3
+
+*******************************
+Source code: src folder
+Graphs : Images folder

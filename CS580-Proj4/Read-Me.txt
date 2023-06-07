@@ -1,0 +1,25 @@
+Name : Abhishek Jallawaram
+mailid : ajallawa@gmu.edu
+GMU ID : G01373042
+NetID : ajallawa
+
+******************************
+
+File generated from Google Colab. The .py file can be run in any python IDE.
+
+
+sklearn:
+MLPClassifier (Neural Network)
+RandomForestClassifier
+
+TensorFlow:
+keras.model
+
+*************************
+
+Report name : CS_580___Project_4
+Path : \CS580-Proj4\Report
+
+*******************************
+Source code: \CS580-Proj4\src
+Graphs & Images : \CS580-Proj4\Graphs_Images
