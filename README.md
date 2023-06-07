@@ -7,7 +7,7 @@ You are given a chessboard of size N * M, where N represents the number of rows 
 
 Constraints:
 
-4 ≤ N, M ≤ 16 (The chessboard can have a maximum size of 10 * 10).
+4 ≤ N, M ≤ 16 (The chessboard can have a maximum size of 16 * 16).
 0 ≤ K ≤ N * M (There can be at most N * M knights on the board).
 0 ≤ Q ≤ N * M (There can be at most N * M queens on the board).
 
