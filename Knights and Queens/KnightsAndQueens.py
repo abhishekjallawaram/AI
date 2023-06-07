@@ -8,6 +8,7 @@ import copy
 
 # import numpy as np
 
+#Setup Initial Board
 def initial_board_print(row, col):
     ##Creating List for each position in the row - E,Q,K
     Element = ['E'*col] * col
@@ -17,7 +18,7 @@ def initial_board_print(row, col):
 
 
 
-
+#Generate Random Positions of Queens and Knoghts
 def random_generator(row, col, queens, knights):
     # print(row*col)
     # print(queens+knights)
@@ -32,7 +33,7 @@ def random_generator(row, col, queens, knights):
         return random_list
 
 
-
+#Get Co-ordinates 
 def get_coordinates(value, row, col):
     value_row = value // row
     value_col = value % row
@@ -46,7 +47,7 @@ def get_coordinates(value, row, col):
     elif value_row < row and value_col == 0:
         return value_row + 1, col
 
-
+#Define Positions of Queens
 def perm_position_Q1(Space_dict, row, col, queens, knights, random_list):
     final_list = []
     perm_Queens = queens
@@ -110,7 +111,7 @@ def perm_position_Q1(Space_dict, row, col, queens, knights, random_list):
     initial_list = position_list_Q+position_list_K
     return Space_dict, initial_list
 
-
+#Define Positions of Knights
 def perm_position_K1(Space_dict, row, col, queens, knights, random_list):
     # perm_Queens = queens
     perm_Knights = knights
@@ -170,7 +171,7 @@ def perm_position_K1(Space_dict, row, col, queens, knights, random_list):
     # return Space_dict, position_list_Q, position_list_K
     return Space_dict, position_list_K
 
-
+#Define Collision function; No queen can attack another queen & No knight can attack another knight or queen 
 def collisions_1(position_list_Q1, position_list_K1, row, col):
     all_position = position_list_Q1 + position_list_K1
     # all_position = sorted(all_position)
@@ -401,6 +402,7 @@ def collisions_1(position_list_Q1, position_list_K1, row, col):
         temp_r2v = 0
     return totol_collitiion
 
+#Generaters Neighbour positions of current state
 def generate_neighbours1(initial_list, row, col,current_conflicts):
     current_state = initial_list
     neighbour_list = []
@@ -486,6 +488,7 @@ def generate_neighbours1(initial_list, row, col,current_conflicts):
     #print(current_state,current_conflicts)
     return current_state,current_conflicts
 
+#Implementation of Hill climbing Algorithm
 def hill_climb_1(initial_board,row,col,queens,knights):
     current_state = initial_board
     current_conflicts = collisions_1(current_state[:queens],current_state[queens:], row, col)
@@ -514,7 +517,7 @@ def hill_climb_1(initial_board,row,col,queens,knights):
 
         current_state = next_state.copy()
 
-
+#Implementation of Simulated Annealing Algorithm
 def simulated_annealing(initial_board,row,col,queens,knights,TEMPERATURE):
     current_state = initial_board
 
@@ -580,6 +583,7 @@ def simulated_annealing(initial_board,row,col,queens,knights,TEMPERATURE):
         #print(final_list)
         return current_state, current_conflicts
 
+#Main Fuction to collected arguments and call the requested algorithm
 if __name__ == "__main__":
     row = int(sys.argv[1])
     col = int(sys.argv[2])
