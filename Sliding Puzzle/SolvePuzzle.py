@@ -3,6 +3,7 @@ import numpy as np
 import heapq
 import time
 
+#Class to define the puzzle state based on the inputs
 class puzzle_state:
     previous_state = None
     state = None
@@ -236,7 +237,7 @@ class puzzle_solver:
                     puzzle.sol = 1
                     return
 
-
+#Manhattan distance heuristic function
     def manhattan_cost1(self, puzzle):
         state = puzzle.state
         goal = puzzle.goal_state
@@ -263,6 +264,7 @@ class puzzle_solver:
 
         return value
 
+    #Misplaced Tiles heuristic function
     def misplaced_cost(self, puzzle):
         state = puzzle.state
         goal = puzzle.goal_state
@@ -275,6 +277,7 @@ class puzzle_solver:
     def dominant_cost(self,puzzle):
         return max(self.misplaced_cost(puzzle),self.manhattan_cost1(puzzle))
 
+    #Fuction to determine the best path
     def get_best_path(self):
         path_list_array = []
         path_list_objects = []
@@ -289,6 +292,7 @@ class puzzle_solver:
         path_list_objects.reverse()
         return path_list_array, path_list_objects
 
+    #Function to determine the steps involved to reach the goal
     def get_goal_directions(self):
         b, path_obj_list = self.get_best_path()
         direction_list = []
@@ -297,6 +301,7 @@ class puzzle_solver:
                 direction_list.append(item.direction)
         return direction_list
 
+    #Function to determine the total number of steps to reach the goal
     def get_total_cost(self):
         _, path_list_obj = self.get_best_path()
         return len(path_list_obj)-1
