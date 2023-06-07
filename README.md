@@ -1,4 +1,4 @@
-# AI
+# AI Projects
 
 # Knights and Queens
 
